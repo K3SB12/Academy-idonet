@@ -63,18 +63,12 @@
         .smooth-scroll {
             scroll-behavior: smooth;
         }
-        /* Estilos para enlaces externos */
-        .external-link {
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
         .external-link::after {
             content: '\f35d';
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             font-size: 0.75em;
+            margin-left: 0.5rem;
             opacity: 0.7;
         }
     </style>
@@ -778,6 +772,14 @@
             },
             
             // CREACIÓN DE CONTENIDO
+            { 
+                name: "NanoBanana", 
+                desc: "Generador de imágenes gratuito de Google AI Studio usando Gemini 2.5 Flash Image. Crea imágenes creativas instantáneamente.", 
+                category: "contenido", 
+                icon: "fa-image", 
+                color: "yellow",
+                url: "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image"
+            },
             { 
                 name: "Sora (OpenAI)", 
                 desc: "Generador de video de OpenAI que crea clips realistas a partir de descripciones de texto.", 
